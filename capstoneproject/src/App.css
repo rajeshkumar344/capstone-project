@@ -1,0 +1,169 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin :0;
+}
+.navbar{
+  width: 100%;
+  height: 10vh;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.heading{
+  font-size: 25px;
+  font-weight: 600;
+}
+.footer{
+  font-size: 10px;
+  width: 100%;
+  height: 10vh;
+  background: black;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+  text-align: center;
+  
+}
+.book-list{
+  width: 100%;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+}
+.addtocart{
+  width: 100%;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+
+}
+.book-details{
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.payment{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 15px;
+  padding: 15px;
+  gap: 10px;
+
+  
+}
+/* .book-image{
+  width: 300px;
+  height: 300px;
+  
+}
+.book{
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+} */
+.form{
+  min-height: 80vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aqua;
+  margin: auto;
+
+}
+.formmain{
+  background-color: darkslateblue
+}
+
+
+  /* Media Queries */
+
+  @media(max-width :1450px){
+    .navbar{
+      width: 100%;
+      height: 10vh;
+
+    }
+    .heading{
+      font-size: 20px;
+    }
+    .footer{
+      font-size: 8px;
+      text-align: center;
+      
+    }
+    .book-list{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+    }
+   
+  }
+
+  @media(max-width :1200px){
+
+    .heading{
+      font-size: 18px;
+    }
+    .footer{
+      font-size: 8px;
+      text-align: center;
+      
+    }
+    .book-list{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+    }
+    .addtocart{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }  
+  }
+
+  @media(max-width :1050px){
+    
+    .heading{
+      font-size: 12px;
+    }
+    .footer{
+      font-size: 8px;
+      text-align: center;
+      
+    }
+    .book-list{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+    }
+   
+  }
+
+  @media(max-width :720px){
+   
+    .heading{
+      font-size: 12px;
+      text-align: center;
+    }
+    .footer{
+      font-size: 8px;
+      text-align: center;
+      
+    }
+    .book-list{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+     
+    }
+   
+   
+  }
